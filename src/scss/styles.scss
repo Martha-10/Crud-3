@@ -1,0 +1,208 @@
+
+$red: #d70000;
+$blue: #0033a0;
+$green: #28a745;
+$white: #ffffff;
+$gray: #f5f5f5;
+$dark: #333;
+$error: #e74c3c;
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $gray;
+  color: $dark;
+}
+
+
+header {
+  background: linear-gradient(to right, $red, $blue);
+  color: $white;
+  padding: 1.5rem;
+  text-align: center;
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+form {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .form-group,
+  .photo-card {
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-input,
+  .form-control {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .input-with-image {
+    display: flex;
+    align-items: center;
+
+    .input-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .btn-success {
+    background-color: $green;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  }
+
+  .error-message,
+  .invalid-feedback {
+    font-size: 0.85rem;
+    color: $error;
+    margin-top: 0.3rem;
+    display: none;
+  }
+
+  .form-input:invalid + .error-message {
+    display: block;
+  }
+}
+
+
+.product-section {
+  margin-top: 3rem;
+
+  h2 {
+    color: $blue;
+    margin-bottom: 1rem;
+  }
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+
+  .product-card {
+    background-color: $white;
+    border: 2px solid $blue;
+    border-radius: 10px;
+    width: 250px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-name {
+      color: $red;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .product-id,
+    .product-price {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+    }
+  }
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .edit-button {
+    background-color: $blue;
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .delete-button {
+    background-color: $red;
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+
+.site-footer {
+  background-color: $blue;
+  color: $white;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+
+  .footer-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+
+    a {
+      color: #eee;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

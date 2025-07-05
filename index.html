@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This a CRUD simulated a store's stocktaking"/>
+    <meta name="keywords" content="stocktaking, store" />
+    <meta name="organization" content="martha-10" />
+    <meta name="author" content="Martha Lucia Garcia Escobar" />
+    <meta name="designer" content="Martha Lucia Garcia Escobar" />
+    <meta name="copyright" content="© 2025 Martha Garcia. All rights reserved"/>
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Olímpica S.A.S. Online Store: Shopping Cart</h1>
+    </header>
+
+    <!-- first container -->
+    <main class="container">
+      <section class="first">
+        <div class="main-container">
+          <h4>Order Details</h4>
+          
+          this a form where recibied the ID of the product
+          <form id="form">
+            <div class="form-group">
+              <label for="ID_product" class="form-label">Product's ID</label>
+              <input
+                type="text"
+                id="ID_product"
+                class="form-input"
+                placeholder="Enter the Product's ID"
+                required
+              />
+              <div class="error-message">This field is required</div>
+            </div>
+
+            <!-- this a form where recibied the name of the product -->
+            <div class="photo-card">
+              <label for="name_product" class="form-label"
+                >Product's name</label
+              >
+              <div class="input-with-image">
+                <img
+                  src="./src/img/products.webp"
+                  alt="Product image olimpica"
+                  class="input-icon"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name_product"
+                  placeholder="Enter the product's name"
+                  required
+                />
+              </div>
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+
+            <!-- this a form where recibied the name of the product -->
+            <div class="photo-card">
+              <label for="price_product" class="form-label"
+                >Product's price</label
+              >
+              <div class="input-with-image">
+                <img
+                  src="./src/img/price.webp"
+                  alt="Price product olimpica"
+                  class="input-icon"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="price_product"
+                  placeholder="Enter the product's price"
+                  required
+                />
+              </div>
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+
+            <button class="btn btn-success" type="submit" id="btnSave">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </section>
+    <!--  this a section to product catalog -->
+      <section class="product-section">
+        <h2>Product Catalog</h2>
+        <!-- empty list real products load with js -->
+        <div class="product-list"></div>
+      </section>
+    </main>
+    <!-- footer section with social media -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 My Online Store. All rights reserved.</p>
+        <nav class="footer-social">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

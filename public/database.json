@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "67",
+      "name": "arroz chino",
+      "price": 89
+    },
+    {
+      "id": 3,
+      "name": "pan",
+      "price": 4500
+    },
+    {
+      "id": 67,
+      "name": "arroz chinorew",
+      "price": 4500
+    }
+  ]
+}
